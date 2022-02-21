@@ -1,5 +1,5 @@
 import tkinter as tk
-from tkcalendar import DateEntry, messagebox
+from tkcalendar import DateEntry
 import pandas as pd
 
 def login():
@@ -14,10 +14,10 @@ def login():
                 print("Yes")
                 break
             else:
-                messagebox.showerror("Error","Inavalid Credentials!")
+                tk.messagebox.showerror("Error","Inavalid Credentials!")
         break
     else:
-        messagebox.showerror("Error","Inavalid Credentials!")
+        tk.messagebox.showerror("Error","Inavalid Credentials!")
     
 Window=tk.Tk()
 Window.title("Student Login")
