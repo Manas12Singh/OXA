@@ -1,11 +1,23 @@
 import tkinter as tk
-from tkcalendar import DateEntry
+from tkcalendar import DateEntry, messagebox
+import pandas as pd
 
 def login():
     sid=e1.get()
     dob=e2.get()
     Window.destroy()
-    exec("dashboard.py")
+    df=read_excel("SD.xlsx")
+    
+    for i in range(len(df)):
+        if id==df.iat[i,0]:
+            if dob==(df.iat[i,4]).strftime("%Y-%m-%d"):
+                print("Yes")
+                break
+            else:
+                messagebox.showerror("Error","Inavalid Credentials!")
+        break
+    else:
+        messagebox.showerror("Error","Inavalid Credentials!")
     
 Window=tk.Tk()
 Window.title("Student Login")
