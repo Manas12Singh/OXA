@@ -31,7 +31,7 @@ l3.grid(row=5,column=1)
 b2=tk.Button(Window,text="FEE DETAILS",font=("Serif","15"))
 b2.grid(row=5,column=2)
 
-l4=tk.Label(Window,text=" ",font=("Serif","35"))
+l4=tk.Label(Window,text=" ",font=("Serif","20"))
 l4.grid(row=6,columnspan=3)
 
 
