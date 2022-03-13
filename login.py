@@ -15,6 +15,7 @@ def login():
             if dob==d:
                 print("Yes")
                 Window.destroy()
+                exec(open("Dashboard.py").read())
                 break
     else:
         messagebox.showerror("Error","Inavalid Credentials!")
