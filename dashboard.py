@@ -13,7 +13,7 @@ for i in range(len(df)):
     bc=df.iat[i,3]
     
 
-l2=tk.Label(Window,text="STUDENT NAME: "+n,font=("Serif","40"))
+l2=tk.Label(Window,text=n,font=("Serif","40"))
 l2.grid(row=1,columnspan=3)
 l2=tk.Label(Window,text="STUDENT ID: "+sid,font=("Serif","20"))
 l2.grid(row=2,columnspan=3)
@@ -31,10 +31,14 @@ l3.grid(row=5,column=1)
 b2=tk.Button(Window,text="FEE DETAILS",font=("Serif","15"))
 b2.grid(row=5,column=2)
 
+l2=tk.Label(Window,text=" ",font=("Serif","35"))
+l2.grid(row=6,columnspan=3)
+
+
 b2=tk.Button(Window,text="ATTENDANCE DETAILS",font=("Serif","15"))
-b2.grid(row=6,column=0)
+b2.grid(row=7,column=0)
 
 b2=tk.Button(Window,text="ACADEMIC DETAILS",font=("Serif","15"))
-b2.grid(row=6,column=2)
+b2.grid(row=7,column=2)
 
 Window.mainloop()
