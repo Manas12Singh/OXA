@@ -7,7 +7,6 @@ def login():
     sid=e1.get()
     dob=str(e2.get())
     df=pd.read_excel("SD.xlsx")
-    print(df)
     
     for i in range(len(df)):
         id=df.iat[i,0]
