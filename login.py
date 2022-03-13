@@ -5,13 +5,13 @@ import pandas as pd
 
 def login():
     sid=e1.get()
-    dob=e2.get()
+    dob=str(e2.get())
     df=pd.read_excel("SD.xlsx")
     
     for i in range(len(df)):
         id=df.iat[i,0]
         if sid==id:
-            d=(df.iat[i,4]).strftime("%d-%m-%y")
+            d=str(df.iat[i,4])
             if dob==d:
                 print("Yes")
                 Window.destroy()
