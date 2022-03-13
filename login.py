@@ -34,7 +34,7 @@ e1.grid(row=2,column=1)
 
 l4=tk.Label(Window,text="Date Of Birth:",font=("Serif","20"))
 l4.grid(row=3,column=0)
-e2=DateEntry(Window,font=("Serif","19"))
+e2=DateEntry(Window,font=("Serif","19"),date_pattern="dd-mm-yyyy")
 e2.grid(row=3,column=1)
         
 b1=tk.Button(Window, text="LOGIN",font=("Serif","20"),padx=20, command=login)
