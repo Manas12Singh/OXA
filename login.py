@@ -9,7 +9,7 @@ def login():
     
     for i in range(len(df)):
         if id==df.iat[i,0]:
-            d=str(df.iat[i,4])
+            d=df.iat[i,4]
             if dob==d:
                 print("Yes")
                 Window.destroy()
