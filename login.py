@@ -8,7 +8,8 @@ def login():
     df=pd.read_excel("SD.xlsx")
     
     for i in range(len(df)):
-        if id==df.iat[i,0]:
+        id=df.iat[i,0]
+        if sid==id:
             d=df.iat[i,4]
             if dob==d:
                 print("Yes")
@@ -16,7 +17,7 @@ def login():
                 break
             else:
                 tk.messagebox.showerror("Error","Inavalid Credentials!")
-        break
+            break
     else:
         tk.messagebox.showerror("Error","Inavalid Credentials!")
     
