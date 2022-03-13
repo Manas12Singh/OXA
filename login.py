@@ -17,9 +17,6 @@ def login():
                 print("Yes")
                 Window.destroy()
                 break
-            else:
-                messagebox.showerror("Error!","Inavalid Credentials!")
-            break
     else:
         messagebox.showerror("Error","Inavalid Credentials!")
     
