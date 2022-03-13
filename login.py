@@ -5,7 +5,6 @@ import pandas as pd
 def login():
     sid=e1.get()
     dob=e2.get()
-    Window.destroy()
     df=pd.read_excel("SD.xlsx")
     
     for i in range(len(df)):
@@ -13,6 +12,7 @@ def login():
             d=str(df.iat[i,4])
             if dob==d:
                 print("Yes")
+                Window.destroy()
                 break
             else:
                 tk.messagebox.showerror("Error","Inavalid Credentials!")
