@@ -12,7 +12,7 @@ def login():
     for i in range(len(df)):
         id=df.iat[i,0]
         if sid==id:
-            d=str(df.iat[i,4])
+            d= (df.iat[i,4]).strftime("%d-%m-%Y")
             if dob==d:
                 print("Yes")
                 Window.destroy()
