@@ -59,5 +59,5 @@ l5=tk.Label(Window,text=" ",font=("Serif","20"))
 l5.grid(row=6,columnspan=3)
 
 l6=tk.Label(Window,text="Bact to home",font='Serif 10 underline')
-l6.grid(row=9,columnspan=3)
+l6.grid(row=9,columnspan=8)
 Window.mainloop()
