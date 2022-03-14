@@ -24,8 +24,8 @@ def blue(n):
 def black(n):
     l6.config(fg='#000000')
 def login(n):
-    exec(open("Login.py").read())
     Window2.destroy()
+    exec(open("Login.py").read())
   
 
 df=pd.read_excel("SD.xlsx")
