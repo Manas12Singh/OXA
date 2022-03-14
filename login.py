@@ -21,8 +21,8 @@ def login():
         messagebox.showerror("Error","Inavalid Credentials!")
 
 def dash(n):
-    if len(n) in [2,5]:
-        e2.text=n+'-'
+    if len(n.get()) in [2,5]:
+        e2.text=n.get()+'-'
     
 Window=tk.Tk()
 Window.title("Student Login")
