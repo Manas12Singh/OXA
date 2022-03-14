@@ -16,10 +16,10 @@ def att_detail():
 def aca_detail():
     Window.destroy()
     exec(open("Academic.py").read())
-def blue():
-    l6.fg='blue'
-def black():
-    l6.fg='black'
+def blue(n):
+    n.fg='blue'
+def black(n):
+    n.fg='black'
     
   
 
