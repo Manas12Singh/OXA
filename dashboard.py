@@ -2,6 +2,7 @@ import pandas as pd
 import tkinter as tk
 
 global l6
+global Window2
 
 Window2=tk.Tk()
 Window2.title("Dashboard")
