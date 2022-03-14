@@ -49,7 +49,7 @@ l4=tk.Label(Window,text=" ",font=("Serif","20"))
 l4.grid(row=6,columnspan=3)
 
 
-b2=tk.Button(Window,text="ATTENDANCE DETAILS",font=("Serif","15"),command=att_detai)
+b2=tk.Button(Window,text="ATTENDANCE DETAILS",font=("Serif","15"),command=att_detail)
 b2.grid(row=7,column=0)
 
 b2=tk.Button(Window,text="ACADEMIC DETAILS",font=("Serif","15"),command=aca_detail)
