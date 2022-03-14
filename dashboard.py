@@ -1,6 +1,8 @@
 import pandas as pd
 import tkinter as tk
 
+global l6
+
 Window=tk.Tk()
 Window.title("Dashboard")
 
