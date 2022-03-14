@@ -22,7 +22,8 @@ def login():
 
 def dash(n):
     if len(e2.get()) in [2,5]:
-        e2.text=e2.get()+'-'
+        l=e2.get()
+        e2.insert(len(l),'-')
     
 Window=tk.Tk()
 Window.title("Student Login")
