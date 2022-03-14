@@ -22,6 +22,9 @@ def blue(n):
     l6.config(fg='#0000FF')
 def black(n):
     l6.config(fg='#000000')
+def login(n):
+    Window.destroy()
+    exec(open("Login.py").read())
     
   
 
@@ -65,10 +68,11 @@ b2.grid(row=7,column=2)
 l5=tk.Label(Window,text=" ",font=("Serif","20"))
 l5.grid(row=6,columnspan=3)
 
-l6=tk.Label(Window,text="Bact to home",font='Serif 10 underline')
+l6=tk.Label(Window,text="Back to home",font='Serif 10 underline')
 l6.grid(row=9,column=1)
 
 l6.bind('<Enter>',blue)
 l6.bind('<Leave>',black)
+l6.bind('<Button-1>',login)
 
 Window.mainloop()
