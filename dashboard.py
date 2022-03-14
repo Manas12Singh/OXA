@@ -17,9 +17,9 @@ def aca_detail():
     Window.destroy()
     exec(open("Academic.py").read())
 def blue(n):
-    n.fg='blue'
+    l6.fg='#0000FF'
 def black(n):
-    n.fg='black'
+    l6.fg='#000000'
     
   
 
