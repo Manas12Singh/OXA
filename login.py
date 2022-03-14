@@ -4,6 +4,7 @@ from tkcalendar import DateEntry
 import pandas as pd
 
 global e2
+global e1
 
 def login():
     sid=e1.get()
