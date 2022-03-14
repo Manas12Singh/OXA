@@ -75,4 +75,4 @@ l6.bind('<Enter>',blue)
 l6.bind('<Leave>',black)
 l6.bind('<Button-1>',login)
 
-Window.mainloop()
+Window2.mainloop()
