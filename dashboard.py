@@ -16,6 +16,11 @@ def att_detail():
 def aca_detail():
     Window.destroy()
     exec(open("Academic.py").read())
+def blue():
+    l6.fg='blue'
+def black():
+    l6.fg='black'
+    
   
 
 df=pd.read_excel("SD.xlsx")
@@ -59,5 +64,9 @@ l5=tk.Label(Window,text=" ",font=("Serif","20"))
 l5.grid(row=6,columnspan=3)
 
 l6=tk.Label(Window,text="Bact to home",font='Serif 10 underline')
-l6.grid(row=9,columnspan=8)
+l6.grid(row=9,column=1)
+
+l6.bind('Enter',blue)
+l6.bind('Leave',black)
+
 Window.mainloop()
