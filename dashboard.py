@@ -66,7 +66,7 @@ l5.grid(row=6,columnspan=3)
 l6=tk.Label(Window,text="Bact to home",font='Serif 10 underline')
 l6.grid(row=9,column=1)
 
-l6.bind('Enter',blue)
-l6.bind('Leave',black)
+l6.bind('<Enter>',blue)
+l6.bind('<Leave>',black)
 
 Window.mainloop()
