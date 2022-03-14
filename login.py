@@ -43,8 +43,17 @@ l4.grid(row=3,column=0)
 e2=DateEntry(Window,font=("Serif","19"),date_pattern="dd-mm-yyyy")
 e2.grid(row=3,column=1)
 
-e2.bind('<Key>',dash)
-        
+e2.bind('1',dash)
+e2.bind('2',dash)
+e2.bind('3',dash)
+e2.bind('4',dash)
+e2.bind('5',dash)
+e2.bind('6',dash)
+e2.bind('7',dash)
+e2.bind('8',dash)
+e2.bind('9',dash)
+e2.bind('0',dash)
+
 b1=tk.Button(Window, text="LOGIN",font=("Serif","20"),padx=20, command=login)
 b1.grid(row=4,columnspan=2)
 
