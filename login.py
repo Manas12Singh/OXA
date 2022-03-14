@@ -5,6 +5,7 @@ import pandas as pd
 
 global e2
 global e1
+global Window
 
 def login():
     sid=e1.get()
