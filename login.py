@@ -3,6 +3,8 @@ from tkinter import messagebox
 from tkcalendar import DateEntry
 import pandas as pd
 
+global e2
+
 def login():
     sid=e1.get()
     dob=str(e2.get())
