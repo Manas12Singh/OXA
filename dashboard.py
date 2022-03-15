@@ -3,6 +3,7 @@ import tkinter as tk
 
 global l8
 global Window2
+global i
 
 Window2=tk.Tk()
 Window2.title("Dashboard")
@@ -35,7 +36,7 @@ for i in range(len(df)):
     if sid==id:
         n=df.iat[i,1]
         bc=df.iat[i,3]
-    
+        break
 
 l1=tk.Label(Window2,text=n,font=("Serif","40"))
 l1.grid(row=1,columnspan=3)
